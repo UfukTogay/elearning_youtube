@@ -1,1 +1,1 @@
-from . import elearning_youtube
+from . import res_config_settings
