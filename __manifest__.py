@@ -8,7 +8,9 @@
     'category': 'eLearning',
     'depends': ['website_slides'],
     'data': [
+        'security/ir.model.access.csv',
         'views/res_config_settings_views.xml',
+        'views/slide_channel_views.xml',
     ],
     'i18n': [
         'i18n/tr_TR.po',
