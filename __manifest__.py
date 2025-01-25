@@ -8,6 +8,7 @@
     'category': 'eLearning',
     'depends': ['website_slides'],
     'data': [
+        'models/res_config_settings.py'
     ],
     'i18n': [
         'i18n/tr_TR.po',
