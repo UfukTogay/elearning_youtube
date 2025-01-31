@@ -1,28 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data>
-    <!--     Extend the slide.channel form view
-        <record id="slide_channel_view_form" model="ir.ui.view">
-            <field name="name">slide.channel.view.form.inherit.elearning.youtube</field>
-            <field name="model">slide.channel</field>
-            <field name="inherit_id" ref="website_slides.view_slide_channel_form"/>
-            <field name="arch" type="xml">
-                <xpath expr="//label[@for='name']" position="before">
-                    <div>
-                        <label for="youtube_playlist_url" string="YouTube Playlist URL"/>
-                        <field name="youtube_playlist_url" options="{'line_breaks': False}" widget="text" string="YouTube Playlist URL" placeholder="Enter YouTube Playlist URL"/>
-                        
-                        <label for="youtube_playlist_id" string="YouTube Playlist ID"/>
-                        <field name="youtube_playlist_id" options="{'line_breaks': False}" widget="text" string="YouTube Playlist ID" placeholder="Enter YouTube Playlist URL"/>
-
-                        <div class="mt-2"></div>
-                        <button name="fetch_youtube_playlist" string="Fetch" type="object" class="btn-primary"/>
-                        <div class="mt-2"></div>
-                    </div>
-                </xpath>
-            </field>
-        </record>-->
-
         <record id="slide_channel_view_form_inherit_youtube_import" model="ir.ui.view">
             <field name="name">slide.channel.view.form.inherit.youtube.import</field>
             <field name="model">slide.channel</field>
