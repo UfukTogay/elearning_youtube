@@ -7,7 +7,7 @@ This Odoo App fetches videos from a YouTube playlist and saves them as courses i
 - Automatically add videos to the eLearning platform.
 - Manage YouTube API Key from the Settings menu.
 
-## Installation
+## Installation & Usage
 
 ### Requirements
 - Odoo 15 or higher.
@@ -28,3 +28,7 @@ This Odoo App fetches videos from a YouTube playlist and saves them as courses i
 10. Enter YouTube playlist URL
 11. Click Fetch and Import button
 12. Wait for the magic to happen
+
+## ToDo List
+1. Get transcript of videos
+2. Create quizes for each video automatically using ChatGPT

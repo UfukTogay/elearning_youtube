@@ -1,11 +1,13 @@
 {
     'name': 'YouTube Playlist to eLearning',
-    'version': '1.0',
-    'summary': 'Create eLearning course from YouTube playlist',
+    'version': '18.0.1.0.0',
+    'summary': 'Create eLearning course and lessons from YouTube playlist',
     'description': 'Fetches videos from a YouTube playlist and saves them as courses in the Odoo eLearning platform.',
-    'author': 'Ufuk Togay',
-    'website': 'https://fimeltd.com',
     'category': 'eLearning',
+    'author': 'Ufuk Togay',
+    'maintainer': 'Ufuk Togay',
+    'website': 'https://fimeltd.com',
+    'license': 'LGPL-3',
     'depends': ['website_slides'],
     'data': [
         'security/ir.model.access.csv',
@@ -17,6 +19,8 @@
         'i18n/tr_TR.po',
         'i18n/en_US.po',
     ],
+    'demo': [],
+    'qweb': [],
     'installable': True,
     'application': True,
 }
