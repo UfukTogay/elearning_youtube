@@ -1,4 +1,4 @@
-from odoo import models, api
+from odoo import models
 
 class SlideChannel(models.Model):
     _inherit = 'slide.channel'
@@ -10,5 +10,5 @@ class SlideChannel(models.Model):
             'res_model': 'youtube.playlist.import.wizard',
             'view_mode': 'form',
             'target': 'new',
-            'context': {'default_channel_id': self.id},
+            'context': {},
         }

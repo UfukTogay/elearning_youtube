@@ -69,10 +69,14 @@ class YouTubePlaylistImportWizard(models.TransientModel):
 
         data = self._fetch_playlist_data(playlist_id)
 
-        # Create Course (Slide Channel)
-        course = self.env['slide.channel'].create({
-            'name': data['title'],
-            'description': data['description'],
+        # Get existing course from context
+        course = self.env['slide.channel'].browse(self.env.context.get('active_id'))
+        if not course.exists():
+            raise UserError(_('Course not found. Please save the course first!'))
+
+        course.write({
+            'name': data['title'],  # Will overwrite manually entered title
+            'description': data['description'] or course.description,
         })
 
         # Create Lessons (Slide Slides)
