@@ -10,5 +10,5 @@ class SlideChannel(models.Model):
             'res_model': 'youtube.playlist.import.wizard',
             'view_mode': 'form',
             'target': 'new',
-            'context': {},
+            'context': {'default_channel_id': self.id},
         }

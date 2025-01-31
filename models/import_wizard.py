@@ -70,7 +70,7 @@ class YouTubePlaylistImportWizard(models.TransientModel):
         data = self._fetch_playlist_data(playlist_id)
 
         # Get existing course from context
-        course = self.env['slide.channel'].browse(self.env.context.get('active_id'))
+        course = self.env['slide.channel'].browse(self.env.context.get('default_channel_id'))
         if not course.exists():
             raise UserError(_('Course not found. Please save the course first!'))
 

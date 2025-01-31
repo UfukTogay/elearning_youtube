@@ -19,9 +19,12 @@ This Odoo App fetches videos from a YouTube playlist and saves them as courses i
    git clone https://github.com/your-username/youtube_elearning.git
 2. Place the module in Odoo's addons directory.
 3. Restart Odoo.
-4. Go to the Apps menu in Odoo and enable Developer Mode.
+4. Go to the Apps menu in Odoo
 5. Search for the elearning_youtube module and install it.
-
-### Settings
-Go to the Settings menu and enter your YouTube API Key (obtained from Google Cloud Console) in the YouTube API Key field.
-
+6. Open eLearning app
+7. Go to the Configuration/Settings menu and enter your YouTube API Key (obtained from Google Cloud Console) in the YouTube API Key field.
+8. Create a new Course
+9. Set Course Title and Click Import From YouTube
+10. Enter YouTube playlist URL
+11. Click Fetch and Import button
+12. Wait for the magic to happen
