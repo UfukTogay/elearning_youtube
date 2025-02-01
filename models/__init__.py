@@ -1,3 +1,3 @@
 from . import res_config_settings
-from . import slide_channel
-from . import import_wizard
+from . import res_slide_channel
+from ..wizard import youtube_import_wizard

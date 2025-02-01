@@ -7,7 +7,7 @@ class SlideChannel(models.Model):
         return {
             'type': 'ir.actions.act_window',
             'name': 'Import YouTube Playlist',
-            'res_model': 'youtube.playlist.import.wizard',
+            'res_model': 'youtube.import.wizard',
             'view_mode': 'form',
             'target': 'new',
             'context': {'default_channel_id': self.id},

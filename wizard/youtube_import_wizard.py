@@ -4,7 +4,7 @@ from odoo import models, fields, api, _
 from odoo.exceptions import UserError
 
 class YouTubePlaylistImportWizard(models.TransientModel):
-    _name = 'youtube.playlist.import.wizard'
+    _name = 'youtube.import.wizard'
     _description = 'Import YouTube Playlist Wizard'
 
     playlist_url = fields.Char(string='Playlist URL', required=True)
@@ -85,6 +85,7 @@ class YouTubePlaylistImportWizard(models.TransientModel):
                 'name': video['title'],
                 'channel_id': course.id,
                 'slide_category': 'video',
+                'video_source_type': 'youtube',
                 'video_url': f'https://www.youtube.com/watch?v={video["video_id"]}',
                 'description': video['description'],
             })
