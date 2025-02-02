@@ -16,7 +16,7 @@ This Odoo App fetches videos from a YouTube playlist and saves them as courses i
 ### Steps
 1. Download or clone the module:
    ```bash
-   git clone https://github.com/ufuktogay/youtube_elearning.git
+   git clone https://github.com/ufuktogay/elearning_youtube.git
 2. Place the module in Odoo's addons directory.
 3. Restart Odoo.
 4. Go to the Apps menu in Odoo
